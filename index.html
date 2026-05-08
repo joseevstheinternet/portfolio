@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이해나 | Product Designer Portfolio</title>
+    <meta name="description" content="Product Designer Lee Haena's creative portfolio. Explore innovative design solutions and user-centric experiences.">
+    
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">HAENA.</div>
+            <ul class="nav-links">
+                <li><a href="#work" class="nav-item">Work</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="reveal-text">LEE<br><span class="accent">HAENA</span></h1>
+                    <p class="role-desc">Creating meaningful digital experiences through<br>thoughtful product design.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-shape"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="line"></span>
+                <span class="text">SCROLL</span>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="container">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="project-grid">
+                <div class="project-card reveal" id="project-1">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project1.png" alt="Project 1" class="project-img">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Mobile App / Fintech</span>
+                        <h3>NexPay Branding & App UI</h3>
+                    </div>
+                </div>
+                <div class="project-card reveal" id="project-2">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project2.png" alt="Project 2" class="project-img">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Web Platform / E-commerce</span>
+                        <h3>Lumina Shop Experience</h3>
+                    </div>
+                </div>
+                <div class="project-card reveal" id="project-3">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project3.png" alt="Project 3" class="project-img">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Design System / SaaS</span>
+                        <h3>Gravity Design System</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="about-wrapper">
+                <div class="about-image reveal">
+                    <img src="assets/profile.png" alt="Lee Haena">
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="intro">
+                        안녕하세요, 사용자 중심의 가치를 시각화하는 <span class="highlight">프로덕트 디자이너 이해나</span>입니다.<br>
+                        데이터와 직관 사이의 균형을 찾고, 복잡한 문제를 명확하고 아름다운 솔루션으로 해결하는 것을 즐깁니다.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="num">05+</span>
+                            <span class="label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="num">20+</span>
+                            <span class="label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <div class="contact-card reveal">
+                <h2>Let's create<br><span class="accent">something together</span></h2>
+                <a href="mailto:hello@haena.design" class="contact-btn">Get in touch</a>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Lee Haena. All rights reserved.</p>
+            <p>Built with Passion & Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
