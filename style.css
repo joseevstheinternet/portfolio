@@ -346,7 +346,6 @@ section {
 
 /* Contact Section */
 #contact {
-    padding-bottom: 50px;
     min-height: 85vh; /* Allow footer to be visible */
 }
 
@@ -411,6 +410,7 @@ footer {
     justify-content: space-between;
     color: var(--text-muted);
     font-size: 0.8rem;
+    margin-top: 40px;
 }
 
 /* Animations */
