@@ -313,8 +313,8 @@ section {
 }
 
 .intro {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 32px;
     margin-bottom: 3rem;
 }
 
@@ -345,6 +345,11 @@ section {
 }
 
 /* Contact Section */
+#contact {
+    padding-bottom: 50px;
+    min-height: 85vh; /* Allow footer to be visible */
+}
+
 .contact-card {
     background: var(--surface);
     padding: 6rem;
@@ -396,8 +401,9 @@ section {
 
 /* Footer */
 footer {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    scroll-snap-align: end;
 }
 
 .footer-content {
