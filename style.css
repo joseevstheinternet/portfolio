@@ -17,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
     font-family: 'Pretendard', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none; /* Hide default cursor for custom one */
+    cursor: none;
 }
 
 a {
@@ -196,7 +197,13 @@ h1 {
 
 /* Section Common */
 section {
-    padding: 10rem 0;
+    padding: 100px 0; /* Requested 100px spacing */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .section-title {
@@ -403,13 +410,14 @@ footer {
 /* Animations */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(60px) scale(0.95);
+    transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1), 
+                transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
 }
 
 /* Responsive */
